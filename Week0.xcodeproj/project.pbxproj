@@ -47,7 +47,6 @@
 		96F4332E220E570100F45A8E = {
 			isa = PBXGroup;
 			children = (
-				9633CF5B2215D1E400E419DB /* MovieCell.swift */,
 				96F43339220E570100F45A8E /* Week0 */,
 				96F43338220E570100F45A8E /* Products */,
 				DC59C28E6D86BAF943A716D8 /* Pods */,
@@ -73,6 +72,7 @@
 				96F43343220E570200F45A8E /* LaunchScreen.storyboard */,
 				96F43346220E570200F45A8E /* Info.plist */,
 				9633CF592215B2FD00E419DB /* MoviesViewController.swift */,
+				9633CF5B2215D1E400E419DB /* MovieCell.swift */,
 			);
 			path = Week0;
 			sourceTree = "<group>";
@@ -83,7 +83,6 @@
 				25BC4ED16682324C34377414 /* Pods-Week0.debug.xcconfig */,
 				554C49AA1A20432D8F881BE9 /* Pods-Week0.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
