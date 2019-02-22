@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121EB94AC83B72B06684F48A /* Pods_Week0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EEC960A9F8CD4756987A46 /* Pods_Week0.framework */; };
+		9633CF5A2215B2FD00E419DB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633CF592215B2FD00E419DB /* MoviesViewController.swift */; };
+		9633CF5C2215D1E400E419DB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633CF5B2215D1E400E419DB /* MovieCell.swift */; };
 		96F4333B220E570100F45A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F4333A220E570100F45A8E /* AppDelegate.swift */; };
 		96F4333D220E570100F45A8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F4333C220E570100F45A8E /* ViewController.swift */; };
 		96F43340220E570100F45A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F4333E220E570100F45A8E /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12EEC960A9F8CD4756987A46 /* Pods_Week0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BC4ED16682324C34377414 /* Pods-Week0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week0.debug.xcconfig"; path = "Target Support Files/Pods-Week0/Pods-Week0.debug.xcconfig"; sourceTree = "<group>"; };
+		554C49AA1A20432D8F881BE9 /* Pods-Week0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week0.release.xcconfig"; path = "Target Support Files/Pods-Week0/Pods-Week0.release.xcconfig"; sourceTree = "<group>"; };
+		9633CF592215B2FD00E419DB /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		9633CF5B2215D1E400E419DB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		96F43337220E570100F45A8E /* Week0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F4333A220E570100F45A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F4333C220E570100F45A8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121EB94AC83B72B06684F48A /* Pods_Week0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +47,11 @@
 		96F4332E220E570100F45A8E = {
 			isa = PBXGroup;
 			children = (
+				9633CF5B2215D1E400E419DB /* MovieCell.swift */,
 				96F43339220E570100F45A8E /* Week0 */,
 				96F43338220E570100F45A8E /* Products */,
+				DC59C28E6D86BAF943A716D8 /* Pods */,
+				E999CC5577C96D29719556C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +72,27 @@
 				96F43341220E570200F45A8E /* Assets.xcassets */,
 				96F43343220E570200F45A8E /* LaunchScreen.storyboard */,
 				96F43346220E570200F45A8E /* Info.plist */,
+				9633CF592215B2FD00E419DB /* MoviesViewController.swift */,
 			);
 			path = Week0;
+			sourceTree = "<group>";
+		};
+		DC59C28E6D86BAF943A716D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25BC4ED16682324C34377414 /* Pods-Week0.debug.xcconfig */,
+				554C49AA1A20432D8F881BE9 /* Pods-Week0.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E999CC5577C96D29719556C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12EEC960A9F8CD4756987A46 /* Pods_Week0.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96F43349220E570200F45A8E /* Build configuration list for PBXNativeTarget "Week0" */;
 			buildPhases = (
+				44DA5B376B698BBF3AFE078B /* [CP] Check Pods Manifest.lock */,
 				96F43333220E570100F45A8E /* Sources */,
 				96F43334220E570100F45A8E /* Frameworks */,
 				96F43335220E570100F45A8E /* Resources */,
+				6C7B67358A776565DC82B993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44DA5B376B698BBF3AFE078B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Week0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C7B67358A776565DC82B993 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week0/Pods-Week0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Week0/Pods-Week0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96F43333220E570100F45A8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +219,8 @@
 			files = (
 				96F4333D220E570100F45A8E /* ViewController.swift in Sources */,
 				96F4333B220E570100F45A8E /* AppDelegate.swift in Sources */,
+				9633CF5C2215D1E400E419DB /* MovieCell.swift in Sources */,
+				9633CF5A2215B2FD00E419DB /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +364,7 @@
 		};
 		96F4334A220E570200F45A8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BC4ED16682324C34377414 /* Pods-Week0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlyTraore.Week0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlyTraore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +383,7 @@
 		};
 		96F4334B220E570200F45A8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554C49AA1A20432D8F881BE9 /* Pods-Week0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlyTraore.Week0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlyTraore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
