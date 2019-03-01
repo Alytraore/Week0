@@ -59,7 +59,7 @@
                                             <outlet property="posterView" destination="jdN-11-d0e" id="XJQ-gl-vqF"/>
                                             <outlet property="synopsisLabel" destination="iYP-7Y-nJP" id="mcQ-hy-tjj"/>
                                             <outlet property="titleLabel" destination="EnF-KC-f7a" id="Ett-kY-6vU"/>
-                                            <segue destination="CJR-LL-lp1" kind="show" id="jMz-wf-eOg"/>
+                                            <segue destination="CJR-LL-lp1" kind="show" id="GOt-pw-Pyz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
