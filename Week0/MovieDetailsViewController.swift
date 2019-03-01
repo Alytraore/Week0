@@ -16,7 +16,7 @@ class MovieDetailsViewController: UIViewController  {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     
-    var movie: [String:Any]!
+    var movie: [String: Any]!
     
     override func viewDidLoad() {
         super.viewDidLoad()

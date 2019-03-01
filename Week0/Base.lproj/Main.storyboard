@@ -71,6 +71,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="s5C-HS-iNZ"/>
                     <connections>
                         <outlet property="tableView" destination="NTk-gN-FcM" id="RYE-ID-gqM"/>
+                        <segue destination="CJR-LL-lp1" kind="show" id="uN6-On-HLr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,12 +116,12 @@
                         <outlet property="backdropView" destination="iBd-0b-9KQ" id="cmj-by-Xea"/>
                         <outlet property="posterView" destination="vZt-SR-kx6" id="eJX-Di-CBL"/>
                         <outlet property="synopsisLabel" destination="E4i-e6-ofW" id="VEl-kM-mNp"/>
-                        <outlet property="titleLabel" destination="Jfr-zI-dQo" id="tHd-QM-db7"/>
+                        <outlet property="titleLabel" destination="Jfr-zI-dQo" id="ugy-Uu-aw6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3n-cb-fbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="1062"/>
+            <point key="canvasLocation" x="889" y="1219"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LDw-l3-PT2">
@@ -176,22 +177,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dz4-vg-f7t">
-                                    <size key="itemSize" width="170" height="271"/>
+                                    <size key="itemSize" width="170" height="217"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="IPl-tt-QCz" customClass="MovieGridCell" customModule="Week0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="271"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="217"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="271"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="217"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1K-Md-mpX">
                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="271"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
@@ -214,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="op6-fA-HiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429.5999999999999" y="385.45727136431788"/>
+            <point key="canvasLocation" x="2329" y="428"/>
         </scene>
         <!--Superhero-->
         <scene sceneID="e1T-5q-lql">
@@ -236,4 +237,7 @@
             <point key="canvasLocation" x="2328.8000000000002" y="-329.68515742128938"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jMz-wf-eOg"/>
+    </inferredMetricsTieBreakers>
 </document>
